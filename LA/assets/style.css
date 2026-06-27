@@ -1,0 +1,245 @@
+html,
+body,
+[class*='css'] {
+    font-family: 'Inter', 'Segoe UI', sans-serif;
+
+    background-color: #ffffff;
+
+    color: #111111;
+}
+
+.main .block-container {
+    max-width: 1400px;
+
+    padding-top: 50px;
+
+    padding-left: 80px;
+
+    padding-right: 80px;
+
+    padding-bottom: 80px;
+}
+
+h1 {
+    font-size: 42px;
+
+    font-weight: 700;
+
+    color: #111111;
+
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 30px;
+
+    font-weight: 600;
+
+    margin-top: 40px;
+
+    margin-bottom: 25px;
+}
+
+h3 {
+    font-size: 22px;
+
+    font-weight: 600;
+}
+
+hr {
+    border: none;
+
+    border-top: 1px solid #ececec;
+
+    margin-top: 35px;
+
+    margin-bottom: 35px;
+}
+
+div[data-testid='stVerticalBlock'] > div {
+    background: white;
+
+    border: 1px solid #eaeaea;
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    margin-bottom: 30px;
+
+    box-shadow:
+        0 3px 12px rgba(0, 0, 0, 0.03),
+        0 1px 3px rgba(0, 0, 0, 0.02);
+
+    transition: all 0.25s ease;
+}
+
+div[data-testid='stVerticalBlock'] > div:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.07);
+}
+
+div[data-testid='metric-container'] {
+    background: white;
+
+    border: 1px solid #ececec;
+
+    border-radius: 18px;
+
+    padding: 25px;
+
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.03);
+
+    transition: all 0.25s ease;
+}
+
+div[data-testid='metric-container']:hover {
+    transform: translateY(-3px);
+
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+}
+
+div[data-testid='metric-container'] label {
+    color: #666666;
+
+    font-size: 15px;
+}
+
+div[data-testid='metric-container'] [data-testid='stMetricValue'] {
+    color: #111111;
+
+    font-size: 34px;
+
+    font-weight: 700;
+}
+
+.stButton > button {
+    width: 100%;
+
+    background: #111111;
+
+    color: white;
+
+    border: none;
+
+    border-radius: 14px;
+
+    padding: 15px;
+
+    font-size: 17px;
+
+    font-weight: 600;
+
+    transition: all 0.25s ease;
+}
+
+.stButton > button:hover {
+    background: #000000;
+
+    transform: translateY(-2px);
+
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.stButton > button:active {
+    transform: scale(0.98);
+}
+
+div[data-baseweb='select'] {
+    border-radius: 14px;
+}
+
+input {
+    border-radius: 14px !important;
+}
+
+.stTextInput input {
+    border: 1px solid #dcdcdc;
+
+    transition: all 0.2s ease;
+}
+
+.stTextInput input:focus {
+    border: 1px solid #111111;
+
+    box-shadow: none;
+}
+
+.stNumberInput input {
+    border-radius: 14px;
+}
+
+.stSelectbox {
+    transition: all 0.2s ease;
+}
+
+.stSlider {
+    padding-top: 15px;
+
+    padding-bottom: 15px;
+}
+
+div[data-testid='stDataFrame'] {
+    border: 1px solid #ececec;
+
+    border-radius: 18px;
+
+    overflow: hidden;
+}
+
+div[data-baseweb='notification'] {
+    border-radius: 18px;
+
+    border: 1px solid #e5e5e5;
+}
+
+div[data-testid='stForm'] {
+    border: 1px solid #ececec;
+
+    border-radius: 22px;
+
+    padding: 30px;
+
+    background: white;
+}
+
+.js-plotly-plot {
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: white;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #d0d0d0;
+
+    border-radius: 20px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #888888;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+
+        transform: translateY(0px);
+    }
+}
+
+.main {
+    animation: fadeIn 0.5s ease;
+}
